@@ -1,20 +1,24 @@
 PODS:
   - IQKeyboardManager (6.5.19)
+  - Kingfisher (8.3.2)
   - SnapKit (5.7.1)
 
 DEPENDENCIES:
   - IQKeyboardManager
+  - Kingfisher (~> 8.0)
   - SnapKit (~> 5.7.0)
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManager
+    - Kingfisher
     - SnapKit
 
 SPEC CHECKSUMS:
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  Kingfisher: 0621d0ac0c78fecb19f6dc5303bde2b52abaf2f5
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: 98b6d580a3c2d5fe0eb04f59dad874ce5cc2b45d
+PODFILE CHECKSUM: c7d9758a431fce0e112a717b3e03f71f7f427045
 
 COCOAPODS: 1.16.2

@@ -13,8 +13,8 @@
 		76D560932DE4C6F900E95144 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D560922DE4C6F900E95144 /* UserListViewController.swift */; };
 		76D560982DE4CE7D00E95144 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D560972DE4CE7D00E95144 /* BaseViewController.swift */; };
 		76D5609B2DE4CFAE00E95144 /* FetchingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609A2DE4CFAE00E95144 /* FetchingState.swift */; };
-		76D5609F2DE4D49E00E95144 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609D2DE4D49E00E95144 /* PostData.swift */; };
-		76D560A02DE4D49E00E95144 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609E2DE4D49E00E95144 /* User.swift */; };
+		76D5609F2DE4D49E00E95144 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609D2DE4D49E00E95144 /* PostEntity.swift */; };
+		76D560A02DE4D49E00E95144 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609E2DE4D49E00E95144 /* UserEntity.swift */; };
 		76D560AC2DE4D97D00E95144 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D560AB2DE4D97D00E95144 /* PostListView.swift */; };
 		76D560AD2DE4D97D00E95144 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D560AA2DE4D97D00E95144 /* PostCell.swift */; };
 		76E15E962DE1BCE900D8242E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E852DE1BCE900D8242E /* AppDelegate.swift */; };
@@ -56,8 +56,8 @@
 		76D560922DE4C6F900E95144 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		76D560972DE4CE7D00E95144 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		76D5609A2DE4CFAE00E95144 /* FetchingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingState.swift; sourceTree = "<group>"; };
-		76D5609D2DE4D49E00E95144 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
-		76D5609E2DE4D49E00E95144 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		76D5609D2DE4D49E00E95144 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		76D5609E2DE4D49E00E95144 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		76D560AA2DE4D97D00E95144 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		76D560AB2DE4D97D00E95144 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		76E15E852DE1BCE900D8242E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		76D5609C2DE4D46A00E95144 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				76D5609D2DE4D49E00E95144 /* PostData.swift */,
-				76D5609E2DE4D49E00E95144 /* User.swift */,
+				76D5609D2DE4D49E00E95144 /* PostEntity.swift */,
+				76D5609E2DE4D49E00E95144 /* UserEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -440,8 +440,8 @@
 				76D560932DE4C6F900E95144 /* UserListViewController.swift in Sources */,
 				76E15EA72DE24C6E00D8242E /* CreatePostInteractor.swift in Sources */,
 				76D560912DE4C6D300E95144 /* UserPickerView.swift in Sources */,
-				76D5609F2DE4D49E00E95144 /* PostData.swift in Sources */,
-				76D560A02DE4D49E00E95144 /* User.swift in Sources */,
+				76D5609F2DE4D49E00E95144 /* PostEntity.swift in Sources */,
+				76D560A02DE4D49E00E95144 /* UserEntity.swift in Sources */,
 				76E15EA82DE24C6E00D8242E /* CreatePostViewController.swift in Sources */,
 				76E15EA92DE24C6E00D8242E /* CreatePostPresentor.swift in Sources */,
 				76E15EAE2DE24DD100D8242E /* AppButton.swift in Sources */,

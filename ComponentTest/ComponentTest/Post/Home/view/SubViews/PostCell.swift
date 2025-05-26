@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import UIKit
+import Kingfisher
 
 class PostCell: UITableViewCell {
     static let reuseIdentifier = "PostCell"
@@ -63,6 +63,18 @@ class PostCell: UITableViewCell {
         return label
     }()
     
+    private let postImage: UIImageView = {
+        let view = UIImageView()
+        view.contentMode = .scaleAspectFit
+        view.layer.borderWidth = 1.0
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.snp.makeConstraints { make in
+            make.width.equalTo(200)
+            make.height.equalTo(150)
+        }
+        return view
+    }()
+    
     private lazy var seperatorView: UIView = {
         let v = UIView()
         v.backgroundColor = .lightGray
@@ -74,6 +86,15 @@ class PostCell: UITableViewCell {
         nameLabel.text = post.user.name
         userNameLabel.text = "@" + post.user.userName
         postDescriptionLabel.text = post.text
+        
+        if let url = URL(string: post.image ?? "") {
+            postImage.isHidden = false
+            postImage.kf.setImage(with: url)
+        }
+        else {
+            postImage.isHidden = true
+        }
+        
     }
     
     // MARK: - Setup
@@ -96,7 +117,7 @@ class PostCell: UITableViewCell {
                                  distribution: .fill,
                                  alignment: .leading,
                                  spacing: 16)
-        vstack.addArrangedSubviews(views: nameStack, postDescriptionLabel)
+        vstack.addArrangedSubviews(views: nameStack, postDescriptionLabel, postImage)
         
         mainstack.addArrangedSubviews(views: iconView, vstack)
         

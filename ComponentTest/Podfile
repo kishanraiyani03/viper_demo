@@ -6,4 +6,5 @@ target 'ComponentTest' do
   use_frameworks!
 	pod 'IQKeyboardManager' #iOS13 and later
   pod 'SnapKit', '~> 5.7.0'
+  pod 'Kingfisher', '~> 8.0'
 end
