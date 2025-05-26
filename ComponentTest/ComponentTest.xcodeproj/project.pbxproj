@@ -15,11 +15,11 @@
 		76D5609B2DE4CFAE00E95144 /* FetchingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609A2DE4CFAE00E95144 /* FetchingState.swift */; };
 		76D5609F2DE4D49E00E95144 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609D2DE4D49E00E95144 /* PostData.swift */; };
 		76D560A02DE4D49E00E95144 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D5609E2DE4D49E00E95144 /* User.swift */; };
+		76D560AC2DE4D97D00E95144 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D560AB2DE4D97D00E95144 /* PostListView.swift */; };
+		76D560AD2DE4D97D00E95144 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D560AA2DE4D97D00E95144 /* PostCell.swift */; };
 		76E15E962DE1BCE900D8242E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E852DE1BCE900D8242E /* AppDelegate.swift */; };
 		76E15E972DE1BCE900D8242E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E902DE1BCE900D8242E /* HomeViewController.swift */; };
 		76E15E9A2DE1BCE900D8242E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E862DE1BCE900D8242E /* SceneDelegate.swift */; };
-		76E15E9B2DE1BCE900D8242E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E8B2DE1BCE900D8242E /* PostCell.swift */; };
-		76E15E9C2DE1BCE900D8242E /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E8C2DE1BCE900D8242E /* PostListView.swift */; };
 		76E15E9D2DE1BCE900D8242E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E8F2DE1BCE900D8242E /* HomeInteractor.swift */; };
 		76E15E9E2DE1BCE900D8242E /* HomePresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E912DE1BCE900D8242E /* HomePresentor.swift */; };
 		76E15E9F2DE1BCE900D8242E /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E15E8E2DE1BCE900D8242E /* HomeRouter.swift */; };
@@ -58,11 +58,11 @@
 		76D5609A2DE4CFAE00E95144 /* FetchingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingState.swift; sourceTree = "<group>"; };
 		76D5609D2DE4D49E00E95144 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		76D5609E2DE4D49E00E95144 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		76D560AA2DE4D97D00E95144 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		76D560AB2DE4D97D00E95144 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		76E15E852DE1BCE900D8242E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E15E862DE1BCE900D8242E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76E15E882DE1BCE900D8242E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		76E15E8B2DE1BCE900D8242E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		76E15E8C2DE1BCE900D8242E /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		76E15E8E2DE1BCE900D8242E /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		76E15E8F2DE1BCE900D8242E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		76E15E902DE1BCE900D8242E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +189,7 @@
 		76D560A52DE4D65E00E95144 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				76D560A92DE4D95000E95144 /* SubViews */,
 				76E15E902DE1BCE900D8242E /* HomeViewController.swift */,
 			);
 			path = view;
@@ -218,6 +219,15 @@
 			path = router;
 			sourceTree = "<group>";
 		};
+		76D560A92DE4D95000E95144 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				76D560AA2DE4D97D00E95144 /* PostCell.swift */,
+				76D560AB2DE4D97D00E95144 /* PostListView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		76E15E872DE1BCE900D8242E /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,20 +245,10 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
-		76E15E8D2DE1BCE900D8242E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				76E15E8B2DE1BCE900D8242E /* PostCell.swift */,
-				76E15E8C2DE1BCE900D8242E /* PostListView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		76E15E922DE1BCE900D8242E /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				76D5609C2DE4D46A00E95144 /* Entity */,
-				76E15E8D2DE1BCE900D8242E /* Views */,
 				76D560A52DE4D65E00E95144 /* view */,
 				76D560A62DE4D66300E95144 /* presentor */,
 				76D560A72DE4D66900E95144 /* interactor */,
@@ -431,12 +431,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E15E962DE1BCE900D8242E /* AppDelegate.swift in Sources */,
+				76D560AC2DE4D97D00E95144 /* PostListView.swift in Sources */,
+				76D560AD2DE4D97D00E95144 /* PostCell.swift in Sources */,
 				76E15E972DE1BCE900D8242E /* HomeViewController.swift in Sources */,
 				76D5609B2DE4CFAE00E95144 /* FetchingState.swift in Sources */,
 				76E15E9A2DE1BCE900D8242E /* SceneDelegate.swift in Sources */,
 				76D560982DE4CE7D00E95144 /* BaseViewController.swift in Sources */,
 				76D560932DE4C6F900E95144 /* UserListViewController.swift in Sources */,
-				76E15E9B2DE1BCE900D8242E /* PostCell.swift in Sources */,
 				76E15EA72DE24C6E00D8242E /* CreatePostInteractor.swift in Sources */,
 				76D560912DE4C6D300E95144 /* UserPickerView.swift in Sources */,
 				76D5609F2DE4D49E00E95144 /* PostData.swift in Sources */,
@@ -445,7 +446,6 @@
 				76E15EA92DE24C6E00D8242E /* CreatePostPresentor.swift in Sources */,
 				76E15EAE2DE24DD100D8242E /* AppButton.swift in Sources */,
 				76E15EAA2DE24C6E00D8242E /* CreatePostRouter.swift in Sources */,
-				76E15E9C2DE1BCE900D8242E /* PostListView.swift in Sources */,
 				76E15E9D2DE1BCE900D8242E /* HomeInteractor.swift in Sources */,
 				76E15E9E2DE1BCE900D8242E /* HomePresentor.swift in Sources */,
 				76E15E9F2DE1BCE900D8242E /* HomeRouter.swift in Sources */,
